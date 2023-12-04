@@ -26,9 +26,9 @@ export class AlbumController {
 
     
 
-    @Delete(':respuestaId')
+    @Delete(':albumId')
     @HttpCode(204)
-    async delete(@Param('respuestaId') respuestaId: string) {
+    async delete(@Param('albumId') respuestaId: string) {
         return await this.albumService.delete(respuestaId);
     }
 }

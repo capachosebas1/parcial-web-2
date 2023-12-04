@@ -12,7 +12,7 @@ import { RedsocialEntity } from './redsocial/redsocial.entity/redsocial.entity';
 import { UsuarioEntity } from './usuario/usuario.entity/usuario.entity';
 import { FotoEntity } from './foto/foto.entity/foto.entity';
 import { AlbumEntity } from './album/album.entity/album.entity';
-import { AlbumService } from './album/album.service';
+
 
 
 @Module({
