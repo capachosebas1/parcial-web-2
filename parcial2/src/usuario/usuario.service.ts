@@ -22,7 +22,7 @@ export class UsuarioService {
    
 
    async findUsuarioById(id: string): Promise<UsuarioEntity> {
-       const usuario: UsuarioEntity = await this.usuarioRepository.findOne({where: {id}, relations: ["red","fotos","album"] } );
+       const usuario: UsuarioEntity = await this.usuarioRepository.findOne({where: {id}, relations: ["red","fotos","albums"] } );
        if (!usuario)
          return null;
   
@@ -30,6 +30,6 @@ export class UsuarioService {
    }
 
    async findAll(): Promise<UsuarioEntity[]> {
-    return await this.usuarioRepository.find({ relations: ["red","fotos","album"] });
+    return await this.usuarioRepository.find({ relations: ["red","fotos","albums"] });
 }
 }

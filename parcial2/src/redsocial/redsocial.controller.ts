@@ -7,7 +7,7 @@ import { RedsocialEntity } from './redsocial.entity/redsocial.entity';
 
 @Controller('redes')
 @UseInterceptors(BusinessErrorsInterceptor)
-export class RespuestaController {
+export class RedsocialController {
 
     constructor(private readonly respuestaService: RedsocialService) {}
 
