@@ -15,7 +15,7 @@ export class FotoDto {
   @IsNotEmpty()
   readonly apertura: number;
 
-  @IsNumber()
+  @IsString()
   @IsNotEmpty()
   readonly fecha: string;
 
